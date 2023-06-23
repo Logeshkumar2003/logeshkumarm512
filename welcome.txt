@@ -1,4 +1,2 @@
 apple
 one
-two
-three
