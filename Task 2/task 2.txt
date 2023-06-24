@@ -1,0 +1,145 @@
+Title: The Difference Between HTTP/1.1 and HTTP/2: A Faster Web Experience
+
+Introduction:
+
+When it comes to browsing the internet, we often take for granted the underlying protocols that enable our web experience. Hypertext Transfer Protocol (HTTP) is the foundation of communication on the World Wide Web, allowing us to access websites, load resources, and interact with online services. Over the years, HTTP has undergone several updates and improvements, with HTTP/1.1 being the most widely used version for a long time. However, in recent years, a new and more efficient protocol called HTTP/2 has emerged, promising a faster and more responsive web experience. In this article, we will explore the significant differences between HTTP/1.1 and HTTP/2 and how they impact our online interactions.
+
+1. Request/Response Multiplexing:
+
+One of the fundamental differences between HTTP/1.1 and HTTP/2 lies in how they handle requests and responses. In HTTP/1.1, only one request can be sent at a time over a single TCP connection. This means that if a webpage consists of multiple resources (e.g., images, CSS, JavaScript files), each resource requires a separate request, leading to potential delays due to the round-trip time (RTT) for each request.
+
+HTTP/2, on the other hand, introduces a feature called request/response multiplexing. It allows multiple requests and responses to be sent and received simultaneously over a single connection. By eliminating the need for multiple connections, HTTP/2 significantly reduces the latency and overhead associated with establishing and maintaining multiple connections, resulting in faster page load times.
+
+2. Server Push:
+
+Another significant improvement in HTTP/2 is the introduction of server push. In traditional HTTP/1.1, the client has to request each resource individually, which can lead to suboptimal performance. Server push allows the server to proactively send additional resources to the client before they are explicitly requested. For example, if a web page requires a CSS file, the server can push the CSS file to the client as part of the initial response, eliminating the need for an additional request.
+
+Server push helps to minimize the number of round trips required to load a webpage fully, reducing latency and improving overall performance. However, it is worth noting that server push should be used judiciously to avoid sending unnecessary resources to the client, as it can lead to increased network congestion.
+
+3. Header Compression:
+
+HTTP/2 incorporates header compression, which addresses one of the major performance bottlenecks in HTTP/1.1. In the older version, HTTP headers are sent as plaintext with each request and response. As web pages become more complex, the size of headers can increase significantly, resulting in increased bandwidth consumption and slower page loads.
+
+HTTP/2 solves this problem by using the HPACK compression algorithm to compress headers. With header compression, redundant or repetitive header information is eliminated, reducing the overall size of the headers sent over the network. This results in improved bandwidth utilization and faster transmission of data, leading to a more efficient web experience.
+
+4. Stream Prioritization:
+
+In HTTP/1.1, there is no built-in mechanism for prioritizing requests. All requests are treated equally, which can lead to resource contention and slower page rendering. HTTP/2 introduces stream prioritization, allowing clients to assign weights and dependencies to requests. This enables more efficient resource allocation, ensuring that critical resources are prioritized and delivered first.
+
+Stream prioritization enhances the user experience by enabling faster loading of essential page elements, such as the main content, while lower-priority resources, such as advertisements or analytics scripts, are loaded later. By optimizing resource delivery, HTTP/2 improves page rendering speed and perceived performance.
+
+Conclusion:
+
+HTTP/2 represents a significant leap forward in
+
+ web protocol technology, addressing many of the limitations of its predecessor, HTTP/1.1. With features such as request/response multiplexing, server push, header compression, and stream prioritization, HTTP/2 offers a faster and more efficient web experience. By reducing latency, minimizing round trips, and optimizing resource delivery, HTTP/2 contributes to improved page load times, better user engagement, and increased overall performance. As web developers and users, embracing HTTP/2 can lead to a more responsive and enjoyable online experience.
+
+
+==================================================================================================================
+
+
+Title: Objects and Their Internal Representation in JavaScript: Unveiling the Magic
+
+Introduction:
+
+JavaScript, as a dynamically-typed and object-oriented programming language, revolves around the concept of objects. Objects are at the heart of JavaScript programming, enabling developers to model real-world entities and encapsulate related data and functionality. Behind the scenes, JavaScript employs a fascinating internal representation for objects, which plays a vital role in how they are created, accessed, and manipulated. In this blog post, we will dive into the internal workings of objects in JavaScript, shedding light on the magic that brings them to life.
+
+1. Object Creation:
+
+In JavaScript, objects can be created using two main approaches: object literals and constructor functions. Object literals allow you to define an object's properties and methods directly within curly braces, like `{}`. Constructor functions, on the other hand, serve as templates for creating multiple objects of the same type. When a constructor function is invoked using the `new` keyword, it creates a new instance of the object.
+
+Regardless of the creation method, JavaScript objects are ultimately represented as key-value pairs, where the keys are strings (or symbols in ES6+) representing property names, and the values can be any valid JavaScript data type.
+
+2. Prototypes and Prototypal Inheritance:
+
+JavaScript implements inheritance through prototypes. Each object in JavaScript has an internal reference to another object called its prototype. When a property or method is accessed on an object, JavaScript first checks if the object itself has that property or method. If not, it looks up the prototype chain until it finds the property or reaches the end of the chain.
+
+This prototypal inheritance mechanism allows objects to inherit properties and methods from their prototypes, creating a hierarchical relationship. In JavaScript, prototypes are typically created using constructor functions or the newer class syntax introduced in ES6.
+
+3. Property Access and Modification:
+
+Accessing and modifying properties in JavaScript objects is a straightforward process. Property values can be retrieved using dot notation (`object.property`) or bracket notation (`object['property']`). If a property doesn't exist on the object itself, JavaScript looks up the prototype chain until it finds the property or returns `undefined` if it's not found.
+
+When a property is modified or added to an object, JavaScript directly assigns or updates the value associated with the property key. If the property already exists, its value is updated. If it doesn't exist, a new property is created on the object.
+
+4. Object Methods and the `this` Keyword:
+
+Objects in JavaScript can contain methods, which are functions associated with the object. When a method is called on an object, the `this` keyword refers to the object itself, allowing access to its properties and methods.
+
+The `this` keyword is dynamically bound at runtime, depending on how the method is called. It ensures that the correct object context is maintained within the method, regardless of the object's position in the prototype chain.
+
+5. Object Enumeration:
+
+Enumerating over object properties is a common operation in JavaScript. There are several ways to iterate through an object's properties, such as `for...in` loops or using the `Object.keys()` and `Object.entries()` methods introduced in ES5.
+
+When iterating over an object, JavaScript follows the property enumeration order, which is not guaranteed to be consistent across different JavaScript engines. Additionally, certain types of properties, such as non-enumerable properties or properties with symbols as keys, may not be visible during enumeration.
+
+Conclusion:
+
+Understanding how objects are internally represented in JavaScript unlocks the power to harness their full potential. Objects, with their key-value structure, prototype-based inheritance, and dynamic nature, provide a flexible and expressive way to model complex systems in JavaScript. By delving into the internal workings of objects, we can write cleaner code, leverage prototypal inheritance,
+
+ and exploit the rich ecosystem of JavaScript frameworks and libraries that build upon this powerful foundation. So, embrace the magic of JavaScript objects and let them empower your web development journey.
+
+
+==================================================================================================================
+
+
+Title:Read about IP address, port, HTTP methods, MAC address
+
+
+IP Address:
+
+An IP (Internet Protocol) address is a unique numerical identifier assigned to each device connected to a network. It serves as a means of identifying and locating devices in a networked environment. IP addresses can be categorized into two main types: IPv4 (Internet Protocol version 4) and IPv6 (Internet Protocol version 6).
+
+IPv4 addresses consist of four sets of numbers separated by dots, such as 192.168.0.1. Each set can range from 0 to 255, providing a total of approximately 4.3 billion unique addresses. However, with the growth of the internet and the increasing number of connected devices, IPv4 addresses have become scarce.
+
+IPv6 addresses were introduced to address this limitation. They use a 128-bit address format, represented by eight groups of four hexadecimal digits, separated by colons, such as 2001:0db8:85a3:0000:0000:8a2e:0370:7334. IPv6 provides a significantly larger address space, allowing for trillions of unique addresses.
+
+Ports:
+
+In computer networking, ports are virtual endpoints through which networked applications or services communicate with each other. A port is identified by a number, known as the port number, which distinguishes different types of services running on a device.
+
+Port numbers range from 0 to 65535. They are divided into three ranges:
+
+- Well-known Ports (0-1023): Reserved for commonly used services, such as HTTP (port 80), HTTPS (port 443), FTP (port 21), and SMTP (port 25).
+- Registered Ports (1024-49151): Assigned to specific services or protocols by the Internet Assigned Numbers Authority (IANA).
+- Dynamic or Private Ports (49152-65535): Used for temporary connections and communication between client and server.
+
+Port numbers are used in conjunction with IP addresses to establish communication between devices on a network. When a packet of data is sent over a network, it contains both the IP address and the port number to ensure that the data reaches the correct application or service on the destination device.
+
+HTTP Methods:
+
+HTTP (Hypertext Transfer Protocol) is the protocol used for communication between web browsers and web servers. It defines a set of methods or verbs that indicate the type of action to be performed on a resource.
+
+The common HTTP methods include:
+
+1. GET: Retrieves a resource from the server. It is primarily used to request and retrieve data.
+
+2. POST: Submits data to be processed by the server. It is commonly used for form submissions and data uploads.
+
+3. PUT: Updates or replaces a resource on the server with the provided data.
+
+4. DELETE: Removes a specified resource from the server.
+
+5. PATCH: Partially modifies or updates a resource on the server.
+
+6. HEAD: Retrieves only the headers of a resource, without retrieving the actual content.
+
+7. OPTIONS: Fetches the supported methods and capabilities of a server.
+
+These HTTP methods allow clients (such as web browsers) to interact with web servers and perform various operations on resources, such as retrieving data, submitting forms, updating information, or deleting resources.
+
+MAC Address:
+
+A MAC (Media Access Control) address is a unique identifier assigned to the network interface card (NIC) of a device. It is a hardware address burned into the device's network interface during manufacturing.
+
+MAC addresses are 48-bit (or 6-byte) hexadecimal numbers, typically represented as six pairs of digits separated by colons or hyphens. For example, 00:1A:2B:3C:4D:5E.
+
+MAC addresses are used at the data link layer of the network protocol stack to uniquely identify devices within a local network. They facilitate communication
+
+ within a local area network (LAN) by ensuring that data packets are correctly delivered to the intended recipient device.
+
+Unlike IP addresses, which can change or be assigned dynamically, MAC addresses are permanent and unique to each network interface.
+
+
+==================================================================================================================
