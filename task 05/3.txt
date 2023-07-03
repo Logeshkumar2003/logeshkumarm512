@@ -1,0 +1,56 @@
+In JavaScript, `window`, `screen`, and `document` are objects that represent different aspects of the browser environment. Each serves a distinct purpose and provides access to various properties and methods. Let's explore each one in detail:
+
+1. `window` Object:
+The `window` object is the global object in the browser environment. It represents the browser window or tab and acts as the top-level container for all other objects, variables, and functions in the current browsing context. When you declare global variables or functions in JavaScript, they become properties and methods of the `window` object. For example:
+
+
+var x = 10;
+console.log(window.x);
+function sayHello() {
+  console.log('Hello!');
+}
+
+window.sayHello();
+
+
+The `window` object provides various properties and methods for controlling and interacting with the browser window. Some common properties include `innerWidth`, `innerHeight`, `location`, `navigator`, and so on.
+
+
+
+================================================================================================================================================================================================================================================================================================================================================================
+
+
+
+2. `screen` Object:
+The `screen` object represents the user's screen or monitor in the browser environment. It provides information about the user's screen, such as screen dimensions and color depth. The `screen` object is a property of the `window` object, so you can access it through `window.screen`. Here are some commonly used properties of the `screen` object:
+
+console.log(window.screen.width);         // Width of the screen in pixels
+console.log(window.screen.height);       // Height of the screen in pixels
+console.log(window.screen.availWidth);  // Available width (excluding taskbars) in pixels
+console.log(window.screen.availHeight);// Available height (excluding taskbars) in pixels
+console.log(window.screen.colorDepth);// Color depth of the screen (usually 24 bits)
+```
+
+Developers may use information from the `screen` object to optimize the layout or behavior of web pages based on the user's screen size or resolution.
+
+
+================================================================================================================================================================================================================================================================================================================================================================
+
+
+
+3. `document` Object:
+The `document` object represents the current HTML document loaded in the browser window. It provides access to the DOM (Document Object Model), which is a tree-like representation of the HTML elements on the page. The `document` object allows you to manipulate and interact with the content of the web page dynamically. For example:
+
+
+
+const heading = document.getElementById('main-heading');
+heading.textContent = 'New Heading';
+
+const newParagraph = document.createElement('p');
+newParagraph.textContent = 'This is a new paragraph.';
+document.body.appendChild(newParagraph);
+
+
+The `document` object offers various methods and properties for selecting elements, modifying content, handling events, and more.
+
+In summary, `window` is the top-level global object representing the browser window, `screen` represents the user's screen, and `document` represents the current HTML document loaded in the browser. Each object has its unique properties and methods to perform different tasks within the browser environment.

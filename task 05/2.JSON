@@ -1,0 +1,39 @@
+{
+    "name": "Logeshkumar M",
+    "email": "logeshkumarm2003@gmail.com",
+    "phone": "123-456-7890",
+    "address": "16/a muthusamy street madhigonpalayam,Dharmapuri-636701",
+    "summary": "Highly skilled software engineer with 5 years of experience in web development. Passionate about creating efficient and scalable solutions. Strong problem-solving skills and ability to work in a team environment.",
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "university": "Rathinam college of arts and science",
+        "year": "2024"
+      }
+    ],
+    "experience": [
+      {
+        "title": "MERN Stack Developer",
+        "company": "ABC Technologies",
+        "location": "City, State",
+        "startDate": "2023",
+        "endDate": "2024",
+        "responsibilities": [
+          "Developed and maintained web applications using modern technologies.",
+          "Collaborated with cross-functional teams to design and implement new features.",
+          "Optimized application performance through code refactoring and performance tuning.",
+          "Mentored junior developers and conducted code reviews."
+        ]
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Node.js",
+      "SQL",
+      "Git"
+    ]
+  }
+  
